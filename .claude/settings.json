@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "wsl bash -c \"cd /mnt/c/temp/claude/code_test_1/build && cmake --build .\""
+          }
+        ]
+      }
+    ]
+  }
+}
