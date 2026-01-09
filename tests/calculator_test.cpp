@@ -47,5 +47,6 @@ TEST_F(CalculatorTest, DivideZeroByPositive) {
 }
 
 TEST_F(CalculatorTest, DivideByZeroThrows) {
-    EXPECT_THROW(calc.divide(10, 0), std::runtime_error);
+    // Cast to void to suppress [[nodiscard]] warning when testing exception
+    EXPECT_THROW(static_cast<void>(calc.divide(10, 0)), std::runtime_error);
 }
