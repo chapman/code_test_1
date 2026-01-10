@@ -13,6 +13,5 @@
 
 ## Build
 
-- Build and test under WSL2 using CMake
-- Project path in WSL: `/mnt/c/temp/claude/code_test_1`
+- Build and test using CMake
 - Tests run automatically as part of the build and must pass
