@@ -1,5 +1,7 @@
 # C++ Toy Example - Simple Calculator
 
+[![CI](https://github.com/chapman/code_test_1/actions/workflows/ci.yml/badge.svg)](https://github.com/chapman/code_test_1/actions/workflows/ci.yml)
+
 A simple C++ project demonstrating basic project structure with CMake.
 
 ## Project Structure
