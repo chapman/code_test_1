@@ -23,12 +23,12 @@ cd build && ctest --output-on-failure
 cd "$PROJECT_DIR"
 
 echo "==> Generating coverage report..."
-lcov --capture --directory build --output-file coverage.info
-lcov --remove coverage.info '/usr/*' '*/googletest/*' '*/tests/*' --output-file coverage.info
+lcov --capture --directory build --output-file coverage.info --ignore-errors mismatch
+lcov --remove coverage.info '/usr/*' '*/googletest/*' '*/tests/*' --output-file coverage.info --ignore-errors mismatch --ignore-errors unused
 
 echo ""
 echo "==> Coverage Summary:"
-lcov --summary coverage.info
+lcov --summary coverage.info --ignore-errors mismatch
 
 echo ""
 echo "==> Generating HTML report..."

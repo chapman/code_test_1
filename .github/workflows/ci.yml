@@ -41,13 +41,13 @@ jobs:
 
     - name: Generate coverage report
       run: |
-        lcov --capture --directory build --output-file coverage.info
-        lcov --remove coverage.info '/usr/*' '*/googletest/*' '*/tests/*' --output-file coverage.info
-        lcov --list coverage.info
+        lcov --capture --directory build --output-file coverage.info --ignore-errors mismatch
+        lcov --remove coverage.info '/usr/*' '*/googletest/*' '*/tests/*' --output-file coverage.info --ignore-errors mismatch --ignore-errors unused
+        lcov --list coverage.info --ignore-errors mismatch
 
     - name: Check coverage threshold
       run: |
-        COVERAGE=$(lcov --summary coverage.info 2>&1 | grep "lines" | grep -oP '\d+\.\d+' | head -1)
+        COVERAGE=$(lcov --summary coverage.info --ignore-errors mismatch 2>&1 | grep "lines" | grep -oP '\d+\.\d+' | head -1)
         echo "Line coverage: ${COVERAGE}%"
         if (( $(echo "$COVERAGE < 80" | bc -l) )); then
           echo "Coverage ${COVERAGE}% is below 80% threshold"
