@@ -10,6 +10,17 @@
           }
         ]
       }
+    ],
+    "Stop": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "prompt",
+            "prompt": "Read PROMPT.md and continue with the next task from TODO.md. If all tasks are complete and tests pass, output <promise>COMPLETE</promise>"
+          }
+        ]
+      }
     ]
   }
 }

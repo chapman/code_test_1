@@ -8,7 +8,8 @@
 - [x] Add tests for `float` types
 - [x] Add tests for `double` types
 - [x] Verify all tests pass (build runs automatically via hook)
-- [ ] Commit changes with descriptive message
+- [x] Commit changes with descriptive message
+- [x] create a PR
 
 ## Completion Criteria
 

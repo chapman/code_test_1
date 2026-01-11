@@ -10,7 +10,8 @@
       "Bash(cmake --build:*)",
       "Bash(git checkout:*)",
       "Bash(git push:*)",
-      "Bash(gh pr create:*)"
+      "Bash(gh pr create:*)",
+      "Bash(./calculator_test)"
     ]
   }
 }
