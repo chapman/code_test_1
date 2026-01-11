@@ -8,9 +8,10 @@ Read TODO.md and work through the task list.
 2. Pick the first unchecked `[ ]` task
 3. Implement that task following C++ coding style from CLAUDE.md
 4. Tests build automatically via PostToolUse hook after file edits
-5. If tests pass, mark task complete in TODO.md with `[x]`
-6. Commit changes with descriptive message
-7. Move to next unchecked task
+5. If test fail, fix the issue before moving on
+6. If tests pass, mark task complete in TODO.md with `[x]`
+7. Commit changes with descriptive message
+8. Move to next unchecked task
 
 ## Current Status
 

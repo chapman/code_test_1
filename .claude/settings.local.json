@@ -11,7 +11,11 @@
       "Bash(git checkout:*)",
       "Bash(git push:*)",
       "Bash(gh pr create:*)",
-      "Bash(./calculator_test)"
+      "Bash(./calculator_test)",
+      "Bash(cmake:*)",
+      "Bash(ctest:*)",
+      "Bash(gh pr view:*)",
+      "Bash(gh pr list:*)"
     ]
   }
 }
