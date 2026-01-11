@@ -4,26 +4,22 @@
 
 class Calculator {
 public:
-    template <typename T>
-    [[nodiscard]] constexpr T add(T a, T b) const noexcept {
+    [[nodiscard]] constexpr int add(int a, int b) const noexcept {
         return a + b;
     }
 
-    template <typename T>
-    [[nodiscard]] constexpr T subtract(T a, T b) const noexcept {
+    [[nodiscard]] constexpr int subtract(int a, int b) const noexcept {
         return a - b;
     }
 
-    template <typename T>
-    [[nodiscard]] constexpr T multiply(T a, T b) const noexcept {
+    [[nodiscard]] constexpr int multiply(int a, int b) const noexcept {
         return a * b;
     }
 
-    template <typename T>
-    [[nodiscard]] T divide(T a, T b) const {
+    [[nodiscard]] double divide(int a, int b) const {
         if (b == 0) {
             throw std::runtime_error("Division by zero");
         }
-        return a / b;
+        return static_cast<double>(a) / b;
     }
 };
