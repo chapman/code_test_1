@@ -66,6 +66,25 @@ cd build
 ctest --output-on-failure
 ```
 
+## Code Coverage
+
+To generate a coverage report locally:
+
+```bash
+# Install lcov if not already installed
+sudo apt-get install lcov
+
+# Run the coverage script
+./scripts/coverage.sh
+```
+
+This will:
+1. Build with coverage instrumentation
+2. Run all tests
+3. Generate an HTML report at `coverage_html/index.html`
+
+CI requires >80% line coverage for PRs to pass.
+
 ## What This Project Does
 
 This simple calculator demonstrates:
