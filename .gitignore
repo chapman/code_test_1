@@ -25,6 +25,13 @@ Makefile
 *.swo
 *~
 
+# Code coverage
+coverage.info
+coverage_html/
+*.gcda
+*.gcno
+*.gcov
+
 # OS files
 .DS_Store
 Thumbs.db

@@ -1,6 +1,7 @@
 # C++ Toy Example - Simple Calculator
 
 [![CI](https://github.com/chapman/code_test_1/actions/workflows/ci.yml/badge.svg)](https://github.com/chapman/code_test_1/actions/workflows/ci.yml)
+[![codecov](https://codecov.io/gh/chapman/code_test_1/branch/master/graph/badge.svg)](https://codecov.io/gh/chapman/code_test_1)
 
 A simple C++ project demonstrating basic project structure with CMake.
 
@@ -64,6 +65,25 @@ To run tests manually:
 cd build
 ctest --output-on-failure
 ```
+
+## Code Coverage
+
+To generate a coverage report locally:
+
+```bash
+# Install lcov if not already installed
+sudo apt-get install lcov
+
+# Run the coverage script
+./scripts/coverage.sh
+```
+
+This will:
+1. Build with coverage instrumentation
+2. Run all tests
+3. Generate an HTML report at `coverage_html/index.html`
+
+CI requires >80% line coverage for PRs to pass.
 
 ## What This Project Does
 
