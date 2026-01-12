@@ -15,7 +15,12 @@
       "Bash(cmake:*)",
       "Bash(ctest:*)",
       "Bash(gh pr view:*)",
-      "Bash(gh pr list:*)"
+      "Bash(gh pr list:*)",
+      "Bash(lcov:*)",
+      "Bash(lcov --list:*)",
+      "Bash(chmod:*)",
+      "Bash(sudo apt-get install:*)",
+      "Bash(apt list:*)"
     ]
   }
 }
